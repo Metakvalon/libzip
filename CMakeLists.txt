@@ -97,6 +97,8 @@ endif()
 # Request ISO C secure library functions (memcpy_s &c)
 list(APPEND CMAKE_REQUIRED_DEFINITIONS -D__STDC_WANT_LIB_EXT1__=1)
 
+set(CMAKE_DEBUG_POSTFIX d)
+
 check_function_exists(_close HAVE__CLOSE)
 check_function_exists(_dup HAVE__DUP)
 check_function_exists(_fdopen HAVE__FDOPEN)
