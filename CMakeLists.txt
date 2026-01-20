@@ -486,7 +486,7 @@ if(LIBZIP_DO_INSTALL)
   )
 
   # Add targets to the build-tree export set
-  export(TARGETS zip
+  export(TARGETS zlib zip
     FILE "${PROJECT_BINARY_DIR}/${PROJECT_NAME}-targets.cmake")
 
   # installation
